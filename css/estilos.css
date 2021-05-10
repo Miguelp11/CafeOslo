@@ -1,0 +1,446 @@
+/* FUENTES */
+@font-face{
+    font-family: "OpenSans-B";
+    src: url(../fonts/OpenSans-Bold.ttf) format("woff");
+    font-weight: bold;
+    font-style: normal;    
+}
+@font-face{
+    font-family: "OpenSans-R";
+    src: url(../fonts/OpenSans-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: normal; 
+}
+/* GENERALES */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color:#f5f0ed;
+}
+/* BARRA DE NAVEGACION */
+.nav{
+    position: relative;
+    z-index: 1;
+    
+    height: 80px;
+}
+ul{
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;    
+    text-align: center; 
+}
+li{
+    display: block;
+    font-size: 16px;
+    font-family: OpenSans-B;
+    border-bottom: 1px solid #ded6c0;
+    padding: 5px;
+    font-size: 15px;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.icono-menu{
+    position: absolute;
+    right: 25px;
+    width: 50px;
+    background-color: #d03b40;
+    padding: 10px;
+    top: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.navegador {  
+    max-height: 0;
+    overflow: hidden;
+    transition: .8s max-height;
+    position: absolute;
+    width: 100%;
+    left: 0;  
+    top: 70px;
+    background-color: #d03b40;;
+}
+.navegador.menu-desplegado{
+    max-height: 170px;    
+}
+/* CONTENIDO */
+.banner{
+    background-image: url(../img/Fondo1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: -20px;
+    z-index: 0;
+    color: #f5f0ed;
+    font-family: OpenSans-B;
+    font-size: 14px;
+    text-align: center;
+}
+.banner h1{
+    display: inline-block;
+    margin-top: 120px;
+}
+.linea{
+    width: 100px;
+    border-bottom: 2px solid #f5f0ed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner p{
+    font-family: OpenSans-R;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    color: #ded6c0;
+}
+.caja1{
+    display: block;
+    background-color: #d03b40;
+    margin-top: 300px;
+    padding: 20px;
+    text-align: center;
+    color: #f5f0ed;
+    width: 100%;
+    font-family: OpenSans-B;
+    font-size: 20px;    
+}
+.caja1 p{
+    font-family: OpenSans-R;
+    font-size: 16px;  
+    color: #ded6c0; 
+}
+.caja2{
+    display: block;
+    background-color: #ded6c0;
+    padding: 20px;
+    text-align: center;
+    color: #d03b40;
+    width: 100%;
+    font-family: OpenSans-B;
+    font-size: 20px;
+}
+.caja2 p{
+    font-family: OpenSans-R;
+    font-size: 16px;
+}
+.cont-img{
+    background-image: url(../img/Fondo2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: OpenSans-B;
+    color: #f5f0ed;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+.cont-img h2{
+    display: inline-block;
+    margin-top: 30px;
+}
+.cont-img p{
+    font-family: OpenSans-R;
+    color: #ded6c0;
+}
+.cont-img a{
+    display: inline-block;
+    border: 2px solid #f5f0ed;
+    color: #ded6c0;
+    padding: 10px;
+    font-family: OpenSans-R;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.caja3, .caja4, .caja5, .caja6{
+    display: block;
+    width: 100%;
+    color: #3c3c3b;    
+}
+.titulo{
+    display: inline-block;
+    font-family: OpenSans-B;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.texto{
+    display: inline-block;
+    font-family: OpenSans-R;
+    padding: 20px;
+    margin-top: -40px;
+    font-size: 16px;
+    text-align: justify;
+}
+.icono{
+    display: block;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caja7{
+    background-color: #ded6c0;
+    padding: 20px 10px 30px 10px;
+    text-align: center;
+    color: #d03b40;
+    width: 100%;
+    font-family: OpenSans-B;
+    font-size: 20px;
+}
+.caja7 p{
+    font-family: OpenSans-R;
+    font-size: 16px;
+}
+.correo{
+    color: #d03b40;
+    font-family: OpenSans-B;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+.caja8{
+    background-color:  #d03b40;
+    padding: 20px 10px 30px 10px;
+    text-align: center;
+    width: 100%;
+    font-family: OpenSans-B;
+    font-size: 20px;
+    color: #f5f0ed;
+}
+.caja8 p{
+    font-family: OpenSans-R;
+    font-size: 16px;
+    color: #ded6c0;
+}
+.maps{
+    display: block;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.pie-pagina{
+    background-color: #241d1b;
+    display: block;
+    width: 100%;
+    margin-top: -17px;
+    padding: 10px;
+    color: #f5f0ed;
+    text-align: justify;
+}
+/* RESPONSIVO 480 769 1024 1600*/
+@media screen and (min-width: 480px){
+    .contenedor{
+        overflow: hidden;        
+    }
+    .contenedor1{
+        overflow: hidden;
+        background-color: #d03b40;
+    }
+    .caja1{
+        float: left;
+        width: 50%;        
+    }
+    .caja1 h2{
+        font-size: 18px;
+    }
+    .caja1 p{
+        font-size: 14px;
+    }
+    .caja2{
+        float: right;
+        width: 50%;        
+        margin-top: 300px;
+        height: 210px;
+    }
+    .caja2 h2{
+        font-size: 18px;
+    }
+    .caja2 p{
+        font-size: 14px;
+    }
+    .caja3, .caja5, .caja7{
+        float: left;
+        display: block;
+        width: 50%; 
+    }
+    .caja4, .caja6, .caja8{
+        float: right;
+        display: block;
+        width: 50%; 
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .texto{
+        font-size: 14px;
+    }
+    .caja7 h2{
+        font-size: 18px;
+    }
+    .caja8 h2{
+        font-size: 18px;
+    }
+    .caja7 p{
+        font-size: 14px;
+    }
+    .caja8 p{
+        font-size: 14px;
+    }
+    .maps{
+        font-size: 14px;
+    }
+    .pie-pagina{
+        margin-top: 0;
+        text-align: center;
+    }    
+}
+@media screen and (min-width:768px){
+    .banner p{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 100px 10px 100px;
+    }
+    .caja1 h2{
+        font-size: 20px;
+    }
+    .caja1 p{
+        font-size: 16px;
+    }
+    .caja2 h2{
+        font-size: 20px;
+    }
+    .caja2 p{
+        font-size: 16px;
+    }
+    .titulo{
+        display: block;
+        text-align: center;
+        font-size: 24px;
+    }
+    .texto{
+        font-size: 16px;
+    }
+    .caja7 h2{
+        font-size: 20px;
+    }
+    .caja8 h2{
+        font-size: 20px;
+    }
+    .caja7 p{
+        font-size: 16px;
+    }
+    .caja8 p{
+        font-size: 16px;
+    }
+    .maps{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1024px){
+    .icono-menu{
+        display: none;
+    }
+    ul{
+        position: absolute;
+        top: -55px;
+        right: 10px;
+    }
+    li{
+        display: inline-block;
+        border-bottom: 0;        
+    }
+    li a{
+        transition: .8s color;
+    }
+    .navegador{
+        overflow: initial;        
+    }
+    li a:hover{
+        color: #d03b40;        
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner p{
+        padding: 10px 250px 10px 250px;
+    }
+    .caja1, .caja2, .caja7, .caja8{
+        height: 300px;
+        padding-top: 70px; 
+    }
+    .caja1 h2{
+        font-size: 24px;
+    }
+    .caja2 h2{
+        font-size: 24px;
+    }
+    .caja1 p{
+        font-size: 18px;
+    }
+    .caja2 p{
+        font-size: 18px;
+    }
+    .caja7 h2{
+        font-size: 24px;
+    }
+    .caja8 h2{
+        font-size: 24px;
+    }
+    .caja7 p{
+        font-size: 18px;
+        padding: 0px 40px 0px 40px;
+    }
+    .caja8 p{
+        font-size: 18px;
+    }
+    .cont-img a{
+        transition: .8s background-color;
+        transition: .8s color;
+    }
+    .cont-img a:hover{
+        background-color: #d03b40;
+        color: #f5f0ed;
+    }
+    .imagen-iconos{
+        position: absolute;
+        width: 40%;
+        top: 20px;
+    }
+    .contenido{        
+        width: 60%;        
+        position: relative;
+        left: 200px;
+    }
+    .caja3, .caja4, .caja5, .caja6{
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .titulo{
+        padding: 10px 10px 20px 0px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .texto{
+        padding: 10px 10px 10px 10px;
+    }
+    .icono{
+        width: 110px;
+    }
+    
+}
